@@ -1,0 +1,137 @@
+@charset "utf-8";  
+/* sempre usar essa primeira linha de cima como começo no css */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: #ced8d6; */
+    background-image: url(https://static3.depositphotos.com/1004973/190/i/450/depositphotos_1906697-stock-photo-grunge-musical-background.jpg);
+}
+
+
+.main-header{
+    padding: 2em;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-header h1{
+    font-size: 4em;
+    margin-bottom: 1.5em;
+    line-height: 1.5em;
+}
+
+.main-header h1 span{
+    color: #721c81;
+}
+
+.conteiner{
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+}
+
+img{
+    width: 100%;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin-bottom: 2em;
+    background: #f1f1f1;
+}
+
+.card h3{
+    margin-bottom: 2em;
+}
+
+.card img{
+    width: 400px;
+}
+
+.card:nth-child(even) img{
+    order: 2
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    background:#000;
+    color: #fff;
+    padding: 0.8em 1.8em;
+    margin-top: 2em;
+    cursor:default;
+}
+
+.btn:hover{
+    opacity: 0.6;
+}
+
+.card div{
+    padding:2em;
+}
+
+.galeria{
+    margin: 2em;
+    display: flex;
+    height: 20em;
+    gap: 1em;
+}
+
+.galeria div{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 100%; */
+    flex: 1;
+    transition:all 1.8s cubic-bezier(0.165, 0.84, 0.44, 9);
+
+}
+
+.galeria div:hover{
+    flex: 3;
+    /* border-radius: 100px; */
+    /* border-top-right-radius: 100px; */
+}
+.galeria:hover div:not(:hover){
+    filter: grayscale(1) blur(1px);
+
+    /* filter: blur(5px);
+filter: brightness(0.4);
+filter: contrast(200%);
+filter: drop-shadow(16px 16px 20px blue);
+filter: grayscale(50%);
+filter: hue-rotate(90deg);
+filter: invert(75%);
+filter: opacity(25%);
+filter: saturate(30%);
+filter: sepia(60%); */
+
+}
+
+footer{
+    text-align: center;
+    font-size: 14px;
+    color:#000;
+    
+}
+.main-header p{
+    font-size: 22px;
+    text-align: center;
+    padding: 25px;
+}
